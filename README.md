@@ -2,6 +2,8 @@
 
 [Apache eCharts](https://echarts.apache.org/en/index.html) in Omnis
 
+Cheatsheet: [https://echarts.apache.org/en/cheat-sheet.html](https://echarts.apache.org/en/cheat-sheet.html)
+
 ## Omnis Interaction
 
 All interaction with Omnis is contained in the `index.html` entry point and the `stores/omnis.js` store.
