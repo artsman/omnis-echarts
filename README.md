@@ -12,7 +12,7 @@ All interaction with Omnis is contained in the `index.html` entry point and the 
 
 ### Properties
 
-- `height`: Height, in `vh`, of the control within the pane. Default is 100%
+- `height`: Height, in `vh`, of the control within the pane. Default is 97% (full screen w/o scroll bar)
 - `option`: JSON input to eCharts, as usage on eCharts examples
 
 ### Events
@@ -25,16 +25,14 @@ All interaction with Omnis is contained in the `index.html` entry point and the 
 ### Build HTML / CSS / Assets
 
 ```bash
-bun run build
+npm run build
 ```
 
-### Prepare for Omnis
+### Installation
 
-Output: `dist/omnis-echarts.htm`
+Download `omnis-echarts.tar.gz` from Releases
 
-Rename: `dist` -> `omnis-echarts`
-
-Move new `omnis-echarts` into Omnis Studio `htmlcontrols`
+Move `omnis-echarts` directory into Omnis Studio `htmlcontrols`, in the application package
 ([Docs](https://www.omnis.net/blog/add-web-functionality-to-omnis-studio-desktop-apps-with-obrowser/))
 
 ## CORS Issues
