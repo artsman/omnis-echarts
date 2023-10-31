@@ -2,7 +2,7 @@ import { defineStore, storeToRefs } from "pinia";
 import { useOmnis } from "@/stores/omnis.js";
 import { computed, toValue } from "vue";
 
-export const defaultHeight = 100;
+export const defaultHeight = 98;
 export const exampleOption = {
   title: {
     text: "Traffic Sources",
