@@ -45,3 +45,5 @@ jobs:
           asset_path: ./omnis-echarts.tar.gz
           asset_name: omnis-echarts.tar.gz
           asset_content_type: application/gzip
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
