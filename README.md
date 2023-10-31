@@ -4,6 +4,8 @@
 
 Cheatsheet: [https://echarts.apache.org/en/cheat-sheet.html](https://echarts.apache.org/en/cheat-sheet.html)
 
+![Stacked Area Chart Demo](assets/stacked-area-chart-demo.png "Stacked Area Chart Demo")
+
 ## Omnis Interaction
 
 All interaction with Omnis is contained in the `index.html` entry point and the `stores/omnis.js` store.
