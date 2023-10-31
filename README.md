@@ -7,9 +7,12 @@ Cheatsheet: [https://echarts.apache.org/en/cheat-sheet.html](https://echarts.apa
 ![Stacked Area Chart Demo](assets/stacked-area-chart-default-demo.png "Stacked Area Chart Demo")
 ![Stacked Area Chart Demo (Vintage)](assets/stacked-area-chart-vintage-demo.png "Stacked Area Chart Demo (Vintage)")
 
-## Omnis Interaction
+## Installation
 
-All interaction with Omnis is contained in the `index.html` entry point and the `stores/omnis.js` store.
+Download `omnis-echarts.tar.gz` from Releases
+
+Move `omnis-echarts` directory into Omnis Studio `htmlcontrols`, in the application package
+([Docs](https://www.omnis.net/blog/add-web-functionality-to-omnis-studio-desktop-apps-with-obrowser/))
 
 ### Properties
 
@@ -30,14 +33,16 @@ All interaction with Omnis is contained in the `index.html` entry point and the 
 npm run build
 ```
 
-### Installation
+### dist
 
-Download `omnis-echarts.tar.gz` from Releases
+All output is placed into the `dist` folder, which can be renamed to `omnis-echarts` and placed in the Omnis Studio
+`htmlcontrols` directory
 
-Move `omnis-echarts` directory into Omnis Studio `htmlcontrols`, in the application package
-([Docs](https://www.omnis.net/blog/add-web-functionality-to-omnis-studio-desktop-apps-with-obrowser/))
+### Omnis Interaction
 
-## CORS Issues
+All interaction with Omnis is contained in the `index.html` entry point and the `stores/omnis.js` store.
+
+### CORS Issues
 
 Omnis Studio relies on [Chromium Embedded](https://bitbucket.org/chromiumembedded/cef/), which
 respects normal file loading rules for disk content. This means that all code must be `base64`
