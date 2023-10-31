@@ -15,6 +15,7 @@ All interaction with Omnis is contained in the `index.html` entry point and the 
 
 - `height`: Height, in `vh`, of the control within the pane. Default is 97% (full screen w/o scroll bar)
 - `option`: JSON input to eCharts, as usage on eCharts examples
+- `theme`: Theme to use for rendering the chart
 
 ### Events
 
