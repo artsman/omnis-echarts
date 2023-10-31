@@ -17,7 +17,6 @@
   "dependencies": {
     "@rushstack/eslint-patch": "^1.5.1",
     "@vue/eslint-config-prettier": "^8.0.0",
-    "bun": "^1.0.7",
     "echarts": "^5.4.3",
     "pinia": "^2.1.7",
     "vue": "^3.3.6",
@@ -26,9 +25,9 @@
   "devDependencies": {
     "@histoire/plugin-vue": "^0.17.1",
     "@vitejs/plugin-vue": "^4.4.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.52.0",
     "eslint-plugin-vue": "^9.18.1",
-    "copyfiles": "^2.4.1",
     "histoire": "^0.17.2",
     "prettier": "^3.0.3",
     "vite": "^4.5.0",
