@@ -4,7 +4,8 @@
 
 Cheatsheet: [https://echarts.apache.org/en/cheat-sheet.html](https://echarts.apache.org/en/cheat-sheet.html)
 
-![Stacked Area Chart Demo](assets/stacked-area-chart-demo.png "Stacked Area Chart Demo")
+![Stacked Area Chart Demo](assets/stacked-area-chart-default-demo.png "Stacked Area Chart Demo")
+![Stacked Area Chart Demo (Vintage)](assets/stacked-area-chart-vintage-demo.png "Stacked Area Chart Demo (Vintage)")
 
 ## Omnis Interaction
 

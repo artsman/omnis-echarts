@@ -1,28 +1,15 @@
 {
-	"classtype": "kTask",
+	"classtype": "kFolder",
 	"omnisversion": "10.2",
-	"internalversion": 3,
-	"tvardefs": [
-
-	],
-	"cvardefs": [
-
-	],
-	"ivardefs": [
-
-	],
+	"internalversion": 0,
 	"properties": {
-		"canremotedebugwhenlocked": false,
-		"collectperformancedata": false,
-		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
 		"createdate": "2023-10-21 13:41:23",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
 		"external": false,
-		"issupercomponent": false,
-		"moddate": "2023-10-31 15:34:24",
+		"moddate": "2023-10-21 13:41:23",
 		"showascheckedout": false,
 		"userinfo": "",
 		"vcsrevision": 0,

@@ -1,0 +1,4 @@
+On evClick
+	Process event and continue
+	Do method save
+	Do iBrowserRef.$redraw()

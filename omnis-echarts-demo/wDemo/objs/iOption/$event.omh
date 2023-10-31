@@ -1,0 +1,12 @@
+On evKey
+	Process event and continue
+	Calculate iOption as $cfield.$contents
+	Do method save
+	Do iBrowserRef.$redraw()
+	
+On evAfter
+	Calculate pretty as OJSON.$formatjson(iOption)
+	Calculate iOption as pretty
+	Do method save
+	Do $cfield.$redraw()
+	Do iBrowserRef.$redraw()

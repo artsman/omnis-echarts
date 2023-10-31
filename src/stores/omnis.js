@@ -8,9 +8,7 @@ export const useOmnis = defineStore("Omnis", () => {
 
    Omnis calls this method when the component is first loaded
   */
-  function omnisOnLoad() {
-    console.log("Init (Omnis Store)");
-  }
+  function omnisOnLoad() {}
 
   /* OMNIS GET DATA
 
@@ -20,7 +18,6 @@ export const useOmnis = defineStore("Omnis", () => {
    DEV WARNING: All nested objects need to be formatted as JSON
   */
   function omnisGetData() {
-    console.log("GetData (Omnis Store)", JSON.stringify(toValue(data)));
     return toValue(data);
   }
 
@@ -32,7 +29,6 @@ export const useOmnis = defineStore("Omnis", () => {
    DEV WARNING: Any nested objects will come in as JSON, e.g. JSON.parse
   */
   function omnisSetData(row) {
-    console.log("SetData (Omnis Store)", JSON.stringify(row));
     data.value = row;
   }
 
@@ -55,9 +51,6 @@ export const useOmnis = defineStore("Omnis", () => {
     let omnisEvent = { event: name, payload: evt };
     if (typeof window.jOmnis !== "undefined") {
       jOmnis.sendControlEvent(omnisEvent);
-    } else {
-      // Debug control event
-      console.log("onControlEvent", omnisEvent);
     }
   }
 

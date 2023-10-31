@@ -1,5 +1,6 @@
 
-Do iData.$define(option)
+Do iData.$define(option,theme)
 
 Do method buildOption
-Do method saveOption
+Do method buildThemes
+Do method save

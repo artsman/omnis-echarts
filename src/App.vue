@@ -4,9 +4,9 @@ import { storeToRefs } from "pinia";
 import Chart from "@/components/Chart.vue";
 
 const store = useEChartsOption();
-const { height, option } = storeToRefs(store);
+const { height, option, theme } = storeToRefs(store);
 </script>
 
 <template>
-  <Chart :height="height" :option="option" />
+  <Chart :height="height" :option="option" :theme="theme" />
 </template>

@@ -5,6 +5,7 @@ import { createPinia } from "pinia";
 
 // Setup echarts
 import "echarts";
+import "./src/themes";
 
 export function setupApp({ app }) {
   // Import pinia

@@ -4,6 +4,7 @@ import App from "./App.vue";
 
 // Setup echarts
 import "echarts";
+import "./themes";
 
 const pinia = createPinia();
 const app = createApp(App);

@@ -1,8 +1,10 @@
 import { defineStore, storeToRefs } from "pinia";
 import { useOmnis } from "@/stores/omnis.js";
 import { computed, toValue } from "vue";
+import { themes } from "@/themes/index.js";
 
 export const defaultHeight = 97;
+export const defaultTheme = "default";
 export const exampleOption = {
   title: {
     text: "Traffic Sources",
@@ -33,8 +35,7 @@ export const exampleOption = {
       emphasis: {
         itemStyle: {
           shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: "rgba(0, 0, 0, 0.5)"
+          shadowOffsetX: 0
         }
       }
     }
@@ -68,5 +69,14 @@ export const useEChartsOption = defineStore("EChartsOption", () => {
     return heightData;
   });
 
-  return { height, option };
+  const theme = computed(() => {
+    const themeData = toValue(data).theme;
+    if (themeData == null || !themes.includes(themeData)) {
+      // DESIGN MODE: Default theme
+      return defaultTheme;
+    }
+    return themeData;
+  });
+
+  return { height, option, theme };
 });
