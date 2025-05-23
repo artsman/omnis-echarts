@@ -73,8 +73,10 @@ npm run build
 
 ### dist
 
-All output is placed into the `dist` folder, which can be renamed to `omnis-echarts` and placed in the Omnis Studio
-`htmlcontrols` directory
+All output is placed into the `dist` folder:
+
+* `omnis-echarts` as the oBrowser HTML Control
+* `ctrl_omnis_echarts` as the Remote Form JSON Control
 
 ### Omnis Interaction
 
