@@ -16,7 +16,7 @@
 		"candropcursor": 0,
 		"contextmenu": "",
 		"cssextra": "",
-		"dataname": "iData",
+		"dataname": "iChartJSON",
 		"desgroup": 0,
 		"designactive": true,
 		"deslock": false,

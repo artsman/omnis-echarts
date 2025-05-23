@@ -1,7 +1,7 @@
 {
 	"classtype": "kWindow",
 	"omnisversion": "10.2",
-	"internalversion": 157,
+	"internalversion": 178,
 	"designtaskname": "Startup_Task",
 	"nextident": 1027,
 	"lastgroupident": 0,
@@ -17,11 +17,11 @@
 			"sublen": 0
 		},
 		{
-			"name": "iData",
-			"order": 1,
-			"type": "kRow",
-			"subtype": "",
-			"sublen": 0
+			"name": "iChartJSON",
+			"order": 9,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
 		},
 		{
 			"name": "iDownloadID",
@@ -110,7 +110,7 @@
 		"menunames": "",
 		"minimizebox": false,
 		"minimizeiconid": 2006,
-		"moddate": "2023-10-31 15:39:41",
+		"moddate": "2025-05-23 11:12:09",
 		"modelessdata": true,
 		"movebehind": true,
 		"osdropflags": "kOSDROPnone",

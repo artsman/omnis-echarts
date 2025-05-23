@@ -1,11 +1,11 @@
 {
   "name": "omnis-echarts",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && mv dist/index.html dist/omnis-echarts.htm",
+    "build": "vite build && mkdir dist/omnis-echarts && mv dist/omnis-echarts.html dist/omnis-echarts/omnis-echarts.htm",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write .",
@@ -15,23 +15,25 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.5.1",
-    "@vue/eslint-config-prettier": "^8.0.0",
-    "echarts": "^5.4.3",
-    "pinia": "^2.1.7",
-    "vue": "^3.3.6",
-    "vue-echarts": "^6.6.1"
+    "@rushstack/eslint-patch": "^1.11.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "echarts": "^5.6.0",
+    "pinia": "^3.0.2",
+    "vue": "^3.5.14",
+    "vue-echarts": "^7.0.3"
   },
   "devDependencies": {
-    "@histoire/plugin-vue": "^0.17.1",
-    "@vitejs/plugin-vue": "^4.4.0",
+    "@histoire/plugin-vue": "^0.17.17",
+    "@vitejs/plugin-vue": "^5.2.4",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.52.0",
-    "eslint-plugin-vue": "^9.18.1",
-    "histoire": "^0.17.2",
-    "prettier": "^3.0.3",
-    "vite": "^4.5.0",
-    "vite-plugin-html": "^3.2.0",
-    "vite-plugin-singlefile": "^0.13.5"
+    "eslint": "^9.27.0",
+    "eslint-plugin-vue": "^10.1.0",
+    "histoire": "^0.17.17",
+    "prettier": "^3.5.3",
+    "vite": "^6.3.5",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-multiple": "^0.2.0",
+    "vite-plugin-singlefile": "^2.2.0",
+    "vite-plugin-static-copy": "^3.0.0"
   }
 }

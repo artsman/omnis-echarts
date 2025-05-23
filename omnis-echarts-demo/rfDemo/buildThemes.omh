@@ -1,0 +1,20 @@
+
+# https://github.com/artsman/omnis-echarts/tree/main/src/themes/index.js
+Do iThemes.$define(theme)
+Do iThemes.$add('default')
+Do iThemes.$add('chalk')
+Do iThemes.$add('dark')
+Do iThemes.$add('essos')
+Do iThemes.$add('halloween')
+Do iThemes.$add('infographic')
+Do iThemes.$add('macarons')
+Do iThemes.$add('purple-passion')
+Do iThemes.$add('roma')
+Do iThemes.$add('romantic')
+Do iThemes.$add('shine')
+Do iThemes.$add('vintage')
+Do iThemes.$add('walden')
+Do iThemes.$add('westeros')
+Do iThemes.$add('wonderland')
+
+Do iThemes.$first()

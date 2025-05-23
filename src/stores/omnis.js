@@ -1,8 +1,11 @@
-import { ref, toValue } from "vue";
-import { defineStore } from "pinia";
+// Declare ctrl_omnis_dashboard_hooks on window as a generic interface to Omnis
+import { inject, ref } from "vue"
+import { defineStore } from "pinia"
+
+import { PROVIDE_OMNIS_COMPONENT_ID } from "@/global"
 
 export const useOmnis = defineStore("Omnis", () => {
-  const data = ref({});
+  const data = ref({})
 
   /* OMNIS ON LOAD
 
@@ -18,7 +21,7 @@ export const useOmnis = defineStore("Omnis", () => {
    DEV WARNING: All nested objects need to be formatted as JSON
   */
   function omnisGetData() {
-    return toValue(data);
+    return JSON.stringify(data.value)
   }
 
   /* OMNIS SET DATA
@@ -28,15 +31,39 @@ export const useOmnis = defineStore("Omnis", () => {
 
    DEV WARNING: Any nested objects will come in as JSON, e.g. JSON.parse
   */
-  function omnisSetData(row) {
-    data.value = row;
+  function omnisSetData(newData) {
+    console.log("Received", newData)
+    try {
+      if (newData != null) {
+        data.value = JSON.parse(newData)
+      } else {
+        data.value = {}
+      }
+    } catch (e) {
+      console.log("Receive data error", e)
+    }
   }
 
-  // Init Omnis hook
-  const jOmnis = typeof window.jOmnis !== "undefined" ? window.jOmnis : {};
+  // Initialize Generic Callbacks Map
+  if (typeof window.ctrl_omnis_echarts_hooks == "undefined") {
+    window.ctrl_omnis_echarts_hooks = new Map()
+  }
 
-  // Initialize Callbacks
-  jOmnis.callbackObject = { omnisOnLoad, omnisGetData, omnisSetData };
+  const hooks = {
+    onLoad: omnisOnLoad,
+    getData: omnisGetData,
+    setData: omnisSetData
+  }
+
+  const control_id = inject(PROVIDE_OMNIS_COMPONENT_ID)
+  window.ctrl_omnis_echarts_hooks.set(control_id, hooks)
+
+  function emit(omnisEvent) {
+    const hooks = window.ctrl_omnis_echarts_hooks.get(control_id)
+    if (typeof hooks.emitEvent !== "undefined") {
+      hooks.emitEvent(omnisEvent)
+    }
+  }
 
   /* EMIT EVENT
 
@@ -48,11 +75,9 @@ export const useOmnis = defineStore("Omnis", () => {
 
  */
   function emitEvent(name, evt) {
-    let omnisEvent = { event: name, payload: evt };
-    if (typeof window.jOmnis !== "undefined") {
-      jOmnis.sendControlEvent(omnisEvent);
-    }
+    const omnisEvent = { event: name, payload: evt }
+    emit(omnisEvent)
   }
 
-  return { data, emitEvent };
-});
+  return { data, emitEvent }
+})

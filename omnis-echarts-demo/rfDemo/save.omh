@@ -3,4 +3,3 @@ Calculate EncodeRow.option as iOption
 Calculate EncodeRow.theme as iThemes.theme
 
 Calculate iChartJSON as OJSON.$listorrowtojson(EncodeRow,kUniTypeCharacter)
-Do iBrowserRef.$redraw()

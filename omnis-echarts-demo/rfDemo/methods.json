@@ -2,6 +2,7 @@
 	{
 		"name": "$construct",
 		"order": 1,
+		"clientexec": false,
 		"pvardefs": [
 
 		],
@@ -23,52 +24,31 @@
 		]
 	},
 	{
-		"name": "buildOption",
+		"name": "$destruct",
 		"order": 2,
+		"clientexec": false,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
-			{
-				"name": "change",
-				"order": 4,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "changeType",
-				"order": 5,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "name",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "previousStat",
-				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "stat",
-				"order": 2,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
+
+		]
+	},
+	{
+		"name": "buildOption",
+		"order": 3,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
 		]
 	},
 	{
 		"name": "buildThemes",
-		"order": 3,
+		"order": 4,
+		"clientexec": false,
 		"pvardefs": [
 
 		],
@@ -84,37 +64,31 @@
 	},
 	{
 		"name": "save",
-		"order": 4,
+		"order": 5,
+		"clientexec": false,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
 			{
 				"name": "EncodeRow",
-				"order": 5,
+				"order": 4,
 				"type": "kRow",
 				"subtype": "",
 				"sublen": 0
 			},
 			{
 				"name": "option",
-				"order": 3,
+				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000
 			},
 			{
 				"name": "theme",
-				"order": 4,
+				"order": 3,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "utf8Stats",
-				"order": 1,
-				"type": "kBinary",
-				"subtype": 0,
 				"sublen": 100000000
 			}
 		]

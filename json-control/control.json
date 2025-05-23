@@ -1,0 +1,39 @@
+{
+  "name": "omnis_echarts",
+  "flags": {
+    "beforeafterevents": false,
+    "beforeevents": false,
+    "backcolorandalpha": true,
+    "noenabled": false,
+    "transparentbackground": false,
+    "hasdefaultborder": true,
+    "hasdisplayformat": false,
+    "hasdragevents": true
+  },
+  "customtabname": "Custom",
+  "standardproperties": ["bordercolor", "dataname", "effect"],
+  "properties": {},
+  "constants": {},
+  "events": {
+    "evControlEvent": {
+      "id": 1,
+      "desc": "Event sent by underlying control (in the style of HTML Controls)",
+      "parameters": [
+        {
+          "name": "event",
+          "type": "character",
+          "desc": "Name of the event"
+        },
+        {
+          "name": "payload",
+          "type": "character",
+          "desc": "JSON content from the component"
+        }
+      ]
+    }
+  },
+  "methods": {},
+  "html": {
+    "template": "<div %o %s data-props='%p' data-mvprops='%m'></div>"
+  }
+}
