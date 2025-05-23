@@ -10,7 +10,7 @@ jobs:
       - name: Bundle Component with Vite
         uses: actions/setup-node@v3
         with:
-          node-version: "20.x"
+          node-version: "23"
           cache: "npm"
       - run: |
           npm ci
