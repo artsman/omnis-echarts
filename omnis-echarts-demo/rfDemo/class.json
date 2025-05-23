@@ -1,7 +1,7 @@
 {
 	"classtype": "kRemoteForm",
 	"omnisversion": "10.2",
-	"internalversion": 59,
+	"internalversion": 67,
 	"designtaskname": "rtDemo",
 	"nextident": 1002,
 	"lastgroupident": 0,
@@ -64,7 +64,7 @@
 		"layouttype": "kLayoutTypeResponsive",
 		"left": 1351,
 		"menulineheight": 44,
-		"moddate": "2025-05-23 11:17:27",
+		"moddate": "2025-05-23 14:20:10",
 		"okkeyobject": "",
 		"serverlessclient": false,
 		"showascheckedout": false,

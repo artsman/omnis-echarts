@@ -99,9 +99,9 @@
 			{
 				"name": "option",
 				"order": 3,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
 			},
 			{
 				"name": "theme",

@@ -1,5 +1,7 @@
+Calculate option as OJSON.$jsontolistorrow(iOption)
+
 Do EncodeRow.$define(option,theme)
-Calculate EncodeRow.option as iOption
+Calculate EncodeRow.option as option
 Calculate EncodeRow.theme as iThemes.theme
 
 Calculate iChartJSON as OJSON.$listorrowtojson(EncodeRow,kUniTypeCharacter)

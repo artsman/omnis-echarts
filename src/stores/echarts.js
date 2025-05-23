@@ -52,12 +52,7 @@ export const useEChartsOption = defineStore("EChartsOption", () => {
       // DESIGN MODE: Show example
       return exampleOption;
     }
-
-    try {
-      return JSON.parse(optionData);
-    } catch (e) {
-      return [];
-    }
+    return optionData;
   });
 
   const height = computed(() => {

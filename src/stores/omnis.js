@@ -32,7 +32,6 @@ export const useOmnis = defineStore("Omnis", () => {
    DEV WARNING: Any nested objects will come in as JSON, e.g. JSON.parse
   */
   function omnisSetData(newData) {
-    console.log("Received", newData)
     try {
       if (newData != null) {
         data.value = JSON.parse(newData)
