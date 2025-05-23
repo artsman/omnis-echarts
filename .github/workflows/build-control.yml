@@ -18,7 +18,7 @@ jobs:
           mv dist omnis-echarts
           tar -zcvf omnis-echarts.tar.gz omnis-echarts/
       - name: Upload Omnis Studio HTML Control artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: omnis-echarts
           path: omnis-echarts.tar.gz
