@@ -11,8 +11,46 @@ Cheatsheet: [https://echarts.apache.org/en/cheat-sheet.html](https://echarts.apa
 
 Download `omnis-echarts.tar.gz` from Releases
 
+### HTML Control (oBrowser)
+
 Move `omnis-echarts` directory into Omnis Studio `htmlcontrols`, in the application package
 ([Docs](https://www.omnis.net/blog/add-web-functionality-to-omnis-studio-desktop-apps-with-obrowser/))
+
+### JSON Control (Remote Form)
+
+See [Docs](https://omnis.net/developers/resources/onlinedocs/index.jsp?detail=WebDev/04jsoncomps.html#json-control-editor)
+
+Aside: `$OMNIS_HOME` is the user directory where Omnis stores it's local files.  It is a copy of the content in 
+`firstruninstall` after the first run of Omnis.
+
+Move:
+
+* `ctrl_omnis_echarts/omnis_echarts` -> `$OMNIS_HOME/html/controls`
+* `ctrl_omnis_echarts/ctrl_omnis_echarts.css` -> `$OMNIS_HOME/html/css/ctrl_omnis_echarts.css`
+* `ctrl_omnis_echarts/ctrl_omnis_echarts.js` -> `$OMNIS_HOME/html/scripts/ctrl_omnis_echarts.js`
+
+Move *Optionally*:
+
+(The `.map` file enables nicer debugger, because the full source is available in the browser's Inspect panel)
+
+* `ctrl_omnis_echarts/ctrl_omnis_echarts.js.map` -> `$OMNIS_HOME/html/scripts/ctrl_omnis_echarts.js.map`
+
+Edit `$OMNIS_HOME/html/jsctempl.htm` to add:
+
+```html
+<!-- Omnis eCharts Styles -->
+<link type="text/css" href="css/ctrl_omnis_echarts.css" rel="stylesheet" />
+```
+
+and
+
+```html
+<!-- Omnis eCharts JavaScript -->
+<script type="text/javascript" crossorigin src="scripts/ctrl_omnis_echarts.js"></script>
+```
+
+to the CSS and JS sections, respectively.
+
 
 ### Properties
 
